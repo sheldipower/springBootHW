@@ -1,19 +1,11 @@
 package service;
 
 import pojo.Employee;
-import ru.skypro.lessons.springboot.weblibrary.pojo.Employee;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public interface EmployeeService {
-    List<Employee> getAllEmployees();
-    int getAllEmployeeSumSalary();
-    String  getEmployeeMinSalary();
-    String  getEmployeeMaxSalary();
-    List<Employee>  getEmployeeHighSalarySalary();
-
-
+public class Service {
     public int maxSalary() {
         int max = 0;
         for (int i = 0; i < EMPLOYEE_LIST.size(); i++)
@@ -61,4 +53,5 @@ public interface EmployeeService {
             }
         return maxEmployee;
     }
+}
 }
